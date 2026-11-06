@@ -1,0 +1,10 @@
+# Arquivos de ambiente e configuração da IDE
+argv.json
+extensions/
+.vscode/
+.system_generated/
+.user_uploaded/
+scratch/
+*.log
+.DS_Store
+Thumbs.db

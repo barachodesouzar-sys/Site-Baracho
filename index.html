@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Site profissional de Rafael Baracho. Conheça meu perfil, minhas qualificações e acesse meu currículo.">
+  <meta name="author" content="Rafael Baracho">
+  <meta name="theme-color" content="#0A0A0F">
+  <title>Rafael Baracho | Perfil Profissional</title>
+
+  <!-- Google Fonts: Playfair Display & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+
+  <!-- Estilos da Aplicação -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/sections.css">
+
+  <!-- Script para prevenir flash de tema antes da renderização -->
+  <script>
+    (function() {
+      var saved = localStorage.getItem('rafael_site_theme');
+      if (saved === 'light') {
+        document.documentElement.setAttribute('data-theme', 'light');
+      }
+    })();
+  </script>
+</head>
+<body>
+
+  <!-- ========================================================================
+       CABEÇALHO FIXO (HEADER)
+       ======================================================================== -->
+  <header class="header" role="banner">
+    <div class="container header__container">
+      <a href="#inicio" class="header__brand" aria-label="Rafael Baracho - Início">
+        Rafael Baracho
+        <span class="header__brand-dot" aria-hidden="true"></span>
+      </a>
+
+      <!-- Navegação Principal -->
+      <nav class="header__nav" id="header-nav" role="navigation" aria-label="Navegação principal">
+        <div class="header__menu">
+          <a href="#inicio" class="header__link is-active">Início</a>
+          <a href="#objetivos" class="header__link">Objetivos</a>
+          <a href="#formacao" class="header__link">Formação</a>
+          <a href="#qualificacoes" class="header__link">Qualificações</a>
+          <a href="#idiomas" class="header__link">Idiomas</a>
+          <a href="#projetos" class="header__link">Projetos</a>
+          <a href="#contato" class="header__link">Contato</a>
+        </div>
+      </nav>
+
+      <!-- Ações do Cabeçalho -->
+      <div class="header__actions">
+        <!-- Alternador de Tema (Dark / Light) -->
+        <button id="theme-toggle" class="theme-toggle" aria-label="Alternar tema" title="Alternar tema" type="button">
+          <!-- Ícone do Sol (Tema Claro) -->
+          <svg class="theme-toggle__icon-sun" aria-hidden="true" viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <!-- Ícone da Lua (Tema Escuro) -->
+          <svg class="theme-toggle__icon-moon" aria-hidden="true" viewBox="0 0 24 24">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <!-- Botão Menu Mobile -->
+        <button id="menu-toggle" class="menu-toggle" aria-label="Abrir menu de navegação" aria-expanded="false" type="button">
+          <svg aria-hidden="true" viewBox="0 0 24 24">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       CONTEÚDO PRINCIPAL
+       ======================================================================== -->
+  <main id="main-content">
+
+    <!-- 0. SEÇÃO HERO (INÍCIO) -->
+    <section id="inicio" class="section hero">
+      <div class="container">
+        <div class="hero__content">
+          <div class="hero__text-col">
+            <span class="hero__greeting">Apresentação Profissional</span>
+            <h1 class="hero__title">Rafael Baracho</h1>
+            <p class="hero__subtitle">
+              Desenvolvedor web focado na criação de interfaces modernas, acessíveis e elegantes. Apaixonado por tecnologia, organização, atenção aos detalhes e código limpo.
+            </p>
+            <div class="hero__actions">
+              <a href="#contato" class="btn btn--primary btn--lg">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                  <polyline points="14 2 14 8 20 8"></polyline>
+                  <line x1="16" y1="13" x2="8" y2="13"></line>
+                  <line x1="16" y1="17" x2="8" y2="17"></line>
+                  <polyline points="10 9 9 9 8 9"></polyline>
+                </svg>
+                Ver currículo
+              </a>
+              <a href="https://wa.me/5544991129047" target="_blank" rel="noopener noreferrer" class="btn btn--secondary btn--lg">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                </svg>
+                Falar no WhatsApp
+              </a>
+            </div>
+          </div>
+
+          <div class="hero__image-wrapper">
+            <div class="hero__avatar">
+              <img src="assets/img/foto-rafael.png" alt="Foto de perfil profissional de Rafael Baracho em traje formal" class="hero__avatar-img" width="280" height="280">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 1. OBJETIVOS PROFISSIONAIS -->
+    <section id="objetivos" class="section">
+      <div class="container">
+        <header class="section__header">
+          <span class="section__tag">Carreira & Metas</span>
+          <h2 class="section__title">Objetivos Profissionais</h2>
+        </header>
+
+        <div class="objectives__box">
+          <p class="objectives__text">
+            Busco oportunidades profissionais na área de desenvolvimento web e front-end, onde eu possa aplicar meus conhecimentos em HTML5, CSS3 e JavaScript, colaborar com proatividade e dedicação em equipe, aprender continuamente com novos desafios e gerar valor real para os projetos e clientes da empresa.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. FORMAÇÃO -->
+    <section id="formacao" class="section">
+      <div class="container">
+        <header class="section__header">
+          <span class="section__tag">Educação & Aprendizado</span>
+          <h2 class="section__title">Formação</h2>
+        </header>
+
+        <div class="card">
+          <h3 class="skill-card__title">Desenvolvimento Web — Bootcamp4All</h3>
+          <p class="text-muted" style="margin-bottom: var(--space-2); font-size: var(--text-sm);">Formação Prática em Desenvolvimento Web | 2026</p>
+          <p class="skill-card__desc">
+            Capacitação prática em desenvolvimento front-end moderno: HTML5 semântico, CSS3 (Flexbox, CSS Grid, Design Responsivo, variáveis CSS), JavaScript ES6+ (estruturas de controle, laços, funções com retorno, manipulação do DOM e validação de formulários) e princípios de acessibilidade (WCAG AA).
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. QUALIFICAÇÕES -->
+    <section id="qualificacoes" class="section">
+      <div class="container">
+        <header class="section__header">
+          <span class="section__tag">Habilidades & Diferenciais</span>
+          <h2 class="section__title">Qualificações</h2>
+          <p class="section__description">Atributos e comportamentos que orientam minha postura profissional e dedicação em cada desafio.</p>
+        </header>
+
+        <div class="grid-cards">
+          <!-- Card 1: Bom Ouvinte -->
+          <article class="card skill-card">
+            <div class="skill-card__icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 18v-6a9 9 0 0 1 18 0v6"></path>
+                <path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"></path>
+              </svg>
+            </div>
+            <div>
+              <h3 class="skill-card__title">Bom Ouvinte</h3>
+              <p class="skill-card__desc">Atenção ativa e empatia na comunicação para compreender necessidades com exatidão e colaborar com a equipe.</p>
+            </div>
+          </article>
+
+          <!-- Card 2: Educado -->
+          <article class="card skill-card">
+            <div class="skill-card__icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
+                <line x1="9" y1="9" x2="9.01" y2="9"></line>
+                <line x1="15" y1="9" x2="15.01" y2="9"></line>
+              </svg>
+            </div>
+            <div>
+              <h3 class="skill-card__title">Educado</h3>
+              <p class="skill-card__desc">Respeito, cordialidade e integridade no trato interpessoal, mantendo um ambiente de trabalho harmonioso.</p>
+            </div>
+          </article>
+
+          <!-- Card 3: Atencioso -->
+          <article class="card skill-card">
+            <div class="skill-card__icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+            </div>
+            <div>
+              <h3 class="skill-card__title">Atencioso</h3>
+              <p class="skill-card__desc">Cuidado rigoroso com detalhes, proatividade para apoiar colegas e atenção máxima à qualidade da entrega.</p>
+            </div>
+          </article>
+        </div>
+
+        <!-- Lista Semântica de Competências e Interesses Técnicos -->
+        <div class="skills__list-card">
+          <h3 class="skills__list-title">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="16 18 22 12 16 6"></polyline>
+              <polyline points="8 6 2 12 8 18"></polyline>
+            </svg>
+            Competências Técnicas & Áreas de Interesse
+          </h3>
+          <ul class="skills__list">
+            <li class="skills__list-item"><span class="skills__list-icon" aria-hidden="true">✓</span> HTML5 Estrutural & Semântica Web</li>
+            <li class="skills__list-item"><span class="skills__list-icon" aria-hidden="true">✓</span> CSS3 Moderno, Flexbox e CSS Grid</li>
+            <li class="skills__list-item"><span class="skills__list-icon" aria-hidden="true">✓</span> JavaScript ES6+ & Manipulação do DOM</li>
+            <li class="skills__list-item"><span class="skills__list-icon" aria-hidden="true">✓</span> Design Responsivo & Mobile-First</li>
+            <li class="skills__list-item"><span class="skills__list-icon" aria-hidden="true">✓</span> Acessibilidade Web & Padrões WCAG</li>
+            <li class="skills__list-item"><span class="skills__list-icon" aria-hidden="true">✓</span> Controle de Versão com Git & GitHub</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. IDIOMAS -->
+    <section id="idiomas" class="section">
+      <div class="container">
+        <header class="section__header">
+          <span class="section__tag">Comunicação Global</span>
+          <h2 class="section__title">Idiomas</h2>
+        </header>
+
+        <div class="grid-cards">
+          <!-- Português -->
+          <article class="card skill-card">
+            <div class="skill-card__icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="2" y1="12" x2="22" y2="12"></line>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+              </svg>
+            </div>
+            <div>
+              <h3 class="skill-card__title">Português</h3>
+              <p class="skill-card__desc">Idioma natal (Nativo). Domínio fluente na fala, escrita e leitura profissional.</p>
+            </div>
+          </article>
+
+          <!-- Inglês -->
+          <article class="card skill-card">
+            <div class="skill-card__icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="2" y1="12" x2="22" y2="12"></line>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+              </svg>
+            </div>
+            <div>
+              <h3 class="skill-card__title">Inglês</h3>
+              <p class="skill-card__desc">Em desenvolvimento (ainda não fluente). Estudos contínuos com foco em expansão de vocabulário e compreensão.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4.1 PROJETOS (RENDERIZADOS DINAMICAMENTE VIA JAVASCRIPT) -->
+    <section id="projetos" class="section">
+      <div class="container">
+        <header class="section__header">
+          <span class="section__tag">Portfólio em Prática</span>
+          <h2 class="section__title">Projetos</h2>
+          <p class="section__description">Aplicações e soluções construídas com foco em código limpo, experiência do usuário e boas práticas de desenvolvimento web.</p>
+        </header>
+
+        <!-- Container populado exclusivamente via JavaScript (laço for em js/projetos.js) -->
+        <div id="lista-projetos" class="projects__grid" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- 5. CONTATO -->
+    <section id="contato" class="section">
+      <div class="container">
+        <header class="section__header">
+          <span class="section__tag">Canais Diretos</span>
+          <h2 class="section__title">Contato</h2>
+          <p class="section__description">Estou disponível para conversar sobre oportunidades profissionais, novos projetos e entrevistas.</p>
+        </header>
+
+        <div class="contact__grid">
+          <!-- Coluna 1: Informações e Links Funcionais -->
+          <div class="contact__info-card">
+            <h3 class="contact__title">Vamos conversar?</h3>
+            <p class="contact__subtitle">Você pode me enviar uma mensagem pelo formulário ou utilizar um dos canais diretos abaixo:</p>
+
+            <div class="contact__actions">
+              <!-- WhatsApp Funcional -->
+              <a href="https://wa.me/5544991129047" target="_blank" rel="noopener noreferrer" class="btn btn--primary">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                </svg>
+                WhatsApp: (44) 99112-9047
+              </a>
+
+              <!-- E-mail Funcional com mailto -->
+              <a href="mailto:rafaelbaracho.dev@gmail.com" class="btn btn--secondary">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+                rafaelbaracho.dev@gmail.com
+              </a>
+
+              <!-- Perfil no GitHub Funcional -->
+              <a href="https://github.com/rafaelbaracho" target="_blank" rel="noopener noreferrer" class="btn btn--outline">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                </svg>
+                GitHub: /rafaelbaracho
+              </a>
+
+              <!-- Baixar Currículo PDF -->
+              <a href="assets/docs/curriculo-rafael-baracho.pdf" download class="btn btn--secondary">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                Baixar currículo (PDF)
+              </a>
+            </div>
+          </div>
+
+          <!-- Coluna 2: Formulário com Validação em JavaScript -->
+          <div class="contact__form-card">
+            <h3 class="contact__title">Mande uma Mensagem</h3>
+            <p class="contact__subtitle">Preencha os campos abaixo. A validação é realizada instantaneamente via JavaScript.</p>
+
+            <form id="formulario-contato" class="contact__form" novalidate>
+              <!-- Campo Nome -->
+              <div class="form__group">
+                <label for="campo-nome" class="form__label">Nome Completo:</label>
+                <input
+                  type="text"
+                  id="campo-nome"
+                  name="nome"
+                  class="form__input"
+                  placeholder="Ex.: Carlos Silva"
+                  required
+                >
+              </div>
+
+              <!-- Campo E-mail -->
+              <div class="form__group">
+                <label for="campo-email" class="form__label">E-mail para Contato:</label>
+                <input
+                  type="email"
+                  id="campo-email"
+                  name="email"
+                  class="form__input"
+                  placeholder="Ex.: carlos@empresa.com"
+                  required
+                >
+              </div>
+
+              <!-- Campo Mensagem -->
+              <div class="form__group">
+                <label for="campo-mensagem" class="form__label">Mensagem:</label>
+                <textarea
+                  id="campo-mensagem"
+                  name="mensagem"
+                  class="form__textarea"
+                  rows="4"
+                  placeholder="Escreva sua proposta, dúvida ou mensagem..."
+                  required
+                ></textarea>
+              </div>
+
+              <!-- Feedback Visual (Sucesso / Erro) com cores distintas -->
+              <div id="mensagem-feedback" class="form__feedback" role="alert" aria-live="polite"></div>
+
+              <!-- Botão de Envio -->
+              <button type="submit" id="btn-enviar-formulario" class="btn btn--primary btn--lg">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+                Enviar mensagem
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================================================
+       RODAPÉ (FOOTER)
+       ======================================================================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <h3 class="footer__brand-title">Rafael Baracho</h3>
+          <p class="footer__brand-desc">Perfil profissional dedicado a recrutadores e empresas que buscam profissionais comprometidos, organizados e atentos aos detalhes.</p>
+        </div>
+
+        <div>
+          <h4 class="footer__heading">Navegação</h4>
+          <ul class="footer__list">
+            <li><a href="#inicio" class="footer__link">Início</a></li>
+            <li><a href="#objetivos" class="footer__link">Objetivos</a></li>
+            <li><a href="#formacao" class="footer__link">Formação</a></li>
+            <li><a href="#qualificacoes" class="footer__link">Qualificações</a></li>
+            <li><a href="#idiomas" class="footer__link">Idiomas</a></li>
+            <li><a href="#projetos" class="footer__link">Projetos</a></li>
+            <li><a href="#contato" class="footer__link">Contato</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer__heading">Ações & Contato</h4>
+          <ul class="footer__list">
+            <li><a href="assets/docs/curriculo-rafael-baracho.pdf" download class="footer__link">Baixar Currículo (PDF)</a></li>
+            <li><a href="https://wa.me/5544991129047" target="_blank" rel="noopener noreferrer" class="footer__link">WhatsApp Direto</a></li>
+            <li><a href="mailto:rafaelbaracho.dev@gmail.com" class="footer__link">rafaelbaracho.dev@gmail.com</a></li>
+            <li><a href="https://github.com/rafaelbaracho" target="_blank" rel="noopener noreferrer" class="footer__link">GitHub Perfil</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>&copy; 2026 Rafael Baracho. Todos os direitos reservados.</p>
+        <p>Desenvolvido com HTML5, CSS3 e JavaScript Puro.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts Modulares -->
+  <script src="js/theme.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/projetos.js"></script>
+  <script src="js/formulario.js"></script>
+</body>
+</html>
